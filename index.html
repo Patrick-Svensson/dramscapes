@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="styles/main.css" type="text/css">
     </head>
     <body>
+
+        <!-- ***** Navigation ***** -->
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">DramScapes</a>
@@ -48,13 +50,35 @@
                         </li>                       
                     </ul>
                 <div class="d-none d-md-block">
-                    <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+                    <p class="navbar-text my-auto mr-2 font-italic">
+                        Great whiskey delivered to your door!
+                    </p>
                     <a href="/login" class="btn">Sign In / Sign Up</a>
                     </div>
                 </div>
             </nav>
-        </div>
 
+            <!-- ***** Header ***** -->
+            <header class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <section class="jumbotron text-center">
+                            <h1 class="jumbotron__heading">The finest whiskeys delivered to your doorstep.</h1>
+                            <hr class="jumbotron__block-divider">
+                            <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+                                <s class="d-none d-sm-inline">€19.99</s>
+                                <span class="d-inline d-sm-none"><br></span>
+                                <strong class="mark">First one is free!</strong>
+                            </p>
+                            <button class="btn btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+                            <p class="text-muted small">
+                                You must be over 18 to sign up to our service. Please, drink responsibly.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </header>
+        </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
