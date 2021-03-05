@@ -3,6 +3,23 @@
 body {
     margin: 1rem;
     background-color: rgb(27, 27, 27);
+    font-family: 'KoHo', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(27, 27, 27);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
 }
 
 .landing-container {
