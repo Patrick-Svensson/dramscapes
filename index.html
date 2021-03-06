@@ -61,61 +61,62 @@
                     </div>
                 </div>
             </nav>
+        </div>
+        <!-- ***** /.Navigation ***** -->
 
-            <!-- ***** Header ***** -->
-            <header class="container-fluid header">
-                <div class="header--overlay">&nbsp;</div>
-                <div class="row">
-                    <div class="col-12 header-spacer"></div>
-                    <div class="col-12">
-                        <section class="jumbotron text-center">
-                            <h1 class="jumbotron__heading">The finest whiskys delivered to your doorstep.</h1>
-                            <p class="lead">Sign up today to start receiving the world's best whiskys every month.
-                                <s class="d-none d-sm-inline">€19.99</s>
-                                <span class="d-inline d-sm-none"><br></span>
-                                <strong class="mark text-dark">First one is free!</strong>
-                            </p>
-                            <button class="btn  btn-warning btn-lg text-dark btn--jumbotron" 
-                                data-toggle="modal" data-target="#signUpModal">
-                                Sign Up!
-                            </button>
-                            <p class="small font-italic">
-                                You must be over 18 to sign up to our service. Please, drink responsibly.
-                            </p>
-                        </section>
-                    </div>
+        <!-- ***** Header ***** -->
+        <header class="container-fluid header">
+            <div class="header--overlay">&nbsp;</div>
+            <div class="row">
+                <div class="col-12 header-spacer"></div>
+                <div class="col-12">
+                    <section class="jumbotron text-center">
+                        <h1 class="jumbotron__heading">The finest whiskys delivered to your doorstep.</h1>
+                        <p class="lead">Sign up today to start receiving the world's best whiskys every month.
+                            <s class="d-none d-sm-inline">€19.99</s>
+                            <span class="d-inline d-sm-none"><br></span>
+                            <strong class="mark text-dark">First one is free!</strong>
+                        </p>
+                        <button class="btn  btn-warning btn-lg text-dark btn--jumbotron" 
+                            data-toggle="modal" data-target="#signUpModal">
+                            Sign Up!
+                        </button>
+                        <p class="small font-italic">
+                            You must be over 18 to sign up to our service. Please, drink responsibly.
+                        </p>
+                    </section>
                 </div>
-            </header>
-            <!-- ***** /.Header ***** -->
+            </div>
+        </header>
+        <!-- ***** /.Header ***** -->
 
-            <!-- ***** Quotes ***** -->
-            <section class="quotes-wrapper bg-light">
-                <div class="container container-expander">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="media">
-                                <div class="d-none d-sm-block">
-                                    <img src="images/john-doe.jpeg" class="rounded-circle mr-3" height=100 width=100>
-                                </div>
-                                <div class="media-body">
-                                    <blockquote class="blockquote">
-                                        <p>I've been introduced to more than 10 great international whiskys I never knew about.</p>
-                                        <p class="blockquote-footer">John Doe</p>
-                                    </blockquote>
-                                </div>
+        <!-- ***** Quotes ***** -->
+        <section class="quotes-wrapper bg-light">
+            <div class="container container-expander">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="media">
+                            <div class="d-none d-sm-block">
+                                <img src="images/john-doe.jpeg" alt="John Doe with shades." class="rounded-circle mr-3" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="blockquote">
+                                    <p>I've been introduced to more than 10 great international whiskys I never knew about.</p>
+                                    <p class="blockquote-footer">John Doe</p>
+                                </blockquote>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="media">
-                                <div class="d-none d-sm-block">
-                                    <img src="images/jane-doe.jpeg" class="rounded-circle mr-3" height=100 width=100>
-                                </div>
-                                <div class="media-body">
-                                    <blockquote class="blockquote">
-                                        <p>I haven't been sober for months!</p>
-                                        <p class="blockquote-footer">Jane Doe</p>
-                                    </blockquote>
-                                </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="media">
+                            <div class="d-none d-sm-block">
+                                <img src="images/jane-doe.jpeg" alt="Jane Doe on the move." class="rounded-circle mr-3" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="blockquote">
+                                    <p>I haven't been sober for months!</p>
+                                    <p class="blockquote-footer">Jane Doe</p>
+                                </blockquote>
                             </div>
                         </div>
                     </div>
@@ -179,24 +180,35 @@
 
         <!-- ***** Modal ***** -->
         <div class="modal" tabindex="-1" id="signUpModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign Up to DramScapes</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="repeatPassword"> Repeat Password</label>
+                                <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Sign Up</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
         <!-- ***** /.Modal ***** -->
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
