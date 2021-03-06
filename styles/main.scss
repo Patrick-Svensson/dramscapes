@@ -42,6 +42,16 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+
+    &--overlay {
+        background-color: rgba(0, 0, 0, .3);
+        position: absolute;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 // ***** Jumbotron *****
@@ -52,7 +62,7 @@ body {
     &__heading {
         color: rgb(248, 249, 250);
         font-weight: 700;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     & .lead {
@@ -76,9 +86,20 @@ body {
 
 // ***** Features *****
 
-.features-wrapper {
-    background-color: rgb(228, 136, 108);
+.features {
+    margin-bottom: 3rem;
+
+    &-wrapper {
+        background-color: rgb(201, 101, 70);
+    }
+
+    &__icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
 }
+
+// ***** Buttons *****
 
 .btn {
     border-radius: 1.5rem;
@@ -90,7 +111,8 @@ body {
 
     &--features {
         min-width: .7rem;
-        color: rgb(228, 136, 108);
+        color: rgb(201, 101, 70);
+        margin-top: 1rem;
     }
 }
 
@@ -98,12 +120,13 @@ body {
 
     .header-spacer {
         width: 100%;
-        height: 10rem;
+        height: 8rem;
     }
 
     .jumbotron {
         &__heading {
             font-size: 2rem;
+            margin-bottom: 0;
         }
 
         & .lead {
