@@ -6,24 +6,35 @@ body {
     font-family: 'KoHo', sans-serif;
 }
 
+.container-expander {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+// ***** Navigation *****
+
 .navbar {
     background-color: rgb(27, 27, 27);
-}
 
-.navbar .navbar-toggler {
-    border: 0;
-}
-
-.navbar .navbar-brand {
+    & .navbar-brand {
     font-weight: bold;
+    }
+
+    & .navbar-toggler {
+        border: 0;
+    }
+
+    & .navbar-nav a {
+        font-weight: bold;
+    }    
 }
 
-.navbar .navbar-nav a {
-    font-weight: bold;
-}
+
+
+// ***** Hero Image *****
 
 .landing-container {
-    min-width: 100%;
+    max-width: 100%;
     height: 85vh;
     background: url("../images/hero.jpg") no-repeat bottom center;
     background-size: cover;
@@ -33,20 +44,34 @@ body {
     position: relative;
 }
 
+// ***** Jumbotron *****
+
 .jumbotron {
     background-color: transparent;
 }
+
+// ***** Quotes *****
 
 .quotes-wrapper {
     padding-top: 2rem;
 }
 
+// ***** Features *****
+
 .features-wrapper {
     background-color: rgb(228, 136, 108);
-    // margin: 0 1rem 1rem 1rem;
 }
 
-.container-expander {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.btn {
+    border-radius: 1.5rem;
+    font-weight: 700;
+
+    &--jumbotron {
+        width: 10rem;
+    }
+
+    &--features {
+        min-width: .7rem;
+        color: rgb(228, 136, 108);
+    }
 }
