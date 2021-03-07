@@ -6,19 +6,14 @@ body {
     font-family: 'KoHo', sans-serif;
 }
 
-.container-expander {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.container-expand {
+    padding: 4rem 0 4rem 0;
 }
 
 // ***** Navigation *****
 
 .navbar {
     background-color: rgb(27, 27, 27);
-
-    & .navbar-brand {
-    font-weight: bold;
-    }
 
     & .navbar-toggler {
         border: 0;
@@ -59,43 +54,23 @@ body {
 .jumbotron {
     background-color: transparent;
 
-    &__heading {
-        color: rgb(248, 249, 250);
-        font-weight: 700;
-        margin-bottom: 3rem;
-    }
-
     & .lead {
         color: rgb(167, 167, 167);
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
     }
 
     & .small {
         font-size: .7rem;
-        margin-top: 1rem;
         color: rgb(248, 249, 250);
     }
-}
-
-// ***** Quotes *****
-
-.quotes-wrapper {
-    padding-top: 2rem;
 }
 
 // ***** Features *****
 
 .features {
-    margin-bottom: 3rem;
-
-    &-wrapper {
-        background-color: rgb(201, 101, 70);
-    }
+    background-color: rgb(201, 101, 70);
 
     &__icon {
         font-size: 3rem;
-        margin-bottom: 1rem;
     }
 }
 
@@ -112,9 +87,16 @@ body {
     &--features {
         min-width: .7rem;
         color: rgb(201, 101, 70);
-        margin-top: 1rem;
     }
 }
+
+// ***** Footer *****
+
+.footer-links {
+    font-size: 1.5rem;
+}
+
+// ***** Media Queries *****
 
 @media (max-width: 440px) and (max-height: 800px) {
 
@@ -126,7 +108,6 @@ body {
     .jumbotron {
         &__heading {
             font-size: 2rem;
-            margin-bottom: 0;
         }
 
         & .lead {

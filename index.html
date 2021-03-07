@@ -26,13 +26,13 @@
         <!-- ***** Navigation ***** -->
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-md navbar-dark mx-1 py-3 fixed-top">
-                <a class="navbar-brand text-warning" href="#">DramScapes</a>
+                <a class="navbar-brand text-warning font-weight-bold" href="#">DramScapes</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
-                <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse ml-5 font-weight-bold" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home </a>
@@ -47,7 +47,8 @@
                                 <a class="dropdown-item" href="#">American</a>
                                 <a class="dropdown-item" href="#">Scotch</a>
                                 <a class="dropdown-item" href="#">Japanese</a>
-                                <a class="dropdown-item" href="#">Irish</a>                            </div>
+                                <a class="dropdown-item" href="#">Irish</a>                            
+                            </div>
                         </li>
                         <li class="nav-item mr-2 d-block d-sm-none">
                             <a class="nav-link" href="#">Sign In / Sign Up</a>
@@ -63,7 +64,7 @@
             </nav>
         </div>
         <!-- ***** /.Navigation ***** -->
-
+        
         <!-- ***** Header ***** -->
         <header class="container-fluid header">
             <div class="header--overlay">&nbsp;</div>
@@ -71,8 +72,8 @@
                 <div class="col-12 header-spacer"></div>
                 <div class="col-12">
                     <section class="jumbotron text-center">
-                        <h1 class="jumbotron__heading">The finest whiskys delivered to your doorstep.</h1>
-                        <p class="lead">Sign up today to start receiving the world's best whiskys every month.
+                        <h1 class="jumbotron__heading font-weight-bold mb-4 text-light">The finest whiskys delivered to your doorstep.</h1>
+                        <p class="lead py-2">Sign up today to start receiving the world's best whiskys every month.
                             <s class="d-none d-sm-inline">€19.99</s>
                             <span class="d-inline d-sm-none"><br></span>
                             <strong class="mark text-dark">First one is free!</strong>
@@ -81,7 +82,7 @@
                             data-toggle="modal" data-target="#signUpModal">
                             Sign Up!
                         </button>
-                        <p class="small font-italic">
+                        <p class="small font-italic mt-3">
                             You must be over 18 to sign up to our service. Please, drink responsibly.
                         </p>
                     </section>
@@ -91,8 +92,8 @@
         <!-- ***** /.Header ***** -->
 
         <!-- ***** Quotes ***** -->
-        <section class="quotes-wrapper bg-light">
-            <div class="container container-expander">
+        <section class="px-md-3 bg-light">
+            <div class="container container-expand">
                 <div class="row">
                     <div class="col-12 text-center mb-5 text-dark">
                         <h2 class="font-weight-bold">Words from our members :</h2>
@@ -102,7 +103,7 @@
                             <div class="d-none d-sm-block">
                                 <img src="images/john-doe.jpeg" alt="John Doe with shades." class="rounded-circle mr-3" height=100 width=100>
                             </div>
-                            <div class="media-body mb-4">
+                            <div class="media-body mb-4 ml-3 mr-1">
                                 <blockquote class="blockquote">
                                     <p>I've been introduced to more than 10 great international whiskys I never knew about.</p>
                                     <p class="blockquote-footer">John Doe</p>
@@ -115,7 +116,7 @@
                             <div class="d-none d-sm-block">
                                 <img src="images/jane-doe.jpeg" alt="Jane Doe on the move." class="rounded-circle mr-3" height=100 width=100>
                             </div>
-                            <div class="media-body">
+                            <div class="media-body ml-3 mr-1">
                                 <blockquote class="blockquote">
                                     <p>I haven't been sober for months!</p>
                                     <p class="blockquote-footer">Jane Doe</p>
@@ -129,43 +130,43 @@
         <!-- ***** /.Quotes ***** -->
 
         <!-- ***** Features ***** -->
-        <section class="features-wrapper">
-            <div class="container container-expander text-light">
+        <section class="features">
+            <div class="container container-expand text-light">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 text-center">
-                        <div class="features">
-                            <h3><i class="fas fa-gift features__icon d-none d-sm-block"></i>Feature 1 
+                        <div>
+                            <h3><i class="fas fa-gift features__icon d-none d-sm-block mb-4" aria-hidden="true"></i>Feature 1 
                                 <span class="badge badge-success">NEW!</span>
                             </h3>
-                            <p>
+                            <p class="mx-3">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                                 aliquip ex ea commodo consequat.
                             </p>
                             <p>
-                                <a class="btn btn-sm btn-light btn--features" href="">Read More</a>
+                                <a class="btn btn-sm btn-light btn--features mb-4" href="">Read More</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center">
-                        <div class="features">
-                            <h3><i class="fas fa-credit-card features__icon d-none d-sm-block"></i>Feature 2</h3>
-                            <p>
+                        <div>
+                            <h3><i class="fas fa-credit-card features__icon d-none d-sm-block mb-4" aria-hidden="true"></i>Feature 2</h3>
+                            <p class="mx-3">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                                 aliquip ex ea commodo consequat.
                             </p>
                             <p>
-                                <a class="btn btn-sm btn-light btn--features" href="">Read More</a>
+                                <a class="btn btn-sm btn-light btn--features mb-4" href="">Read More</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-12 d-md-none d-lg-block col-lg-4 text-center">
-                        <div class="features">
-                            <h3><i class="fas fa-times-circle features__icon d-none d-sm-block"></i>Feature 3</h3>
-                            <p>
+                        <div>
+                            <h3><i class="fas fa-times-circle features__icon d-none d-sm-block mb-4" aria-hidden="true"></i>Feature 3</h3>
+                            <p class="mx-3">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -213,6 +214,30 @@
             </div>
         </div>
         <!-- ***** /.Modal ***** -->
+
+        <!-- ***** Footer ***** -->
+        <footer>
+            <div class="container container-expand footer text-center text-light">
+                <div class="row">
+                    <div class="col-12 text-warning">
+                        <h2 class="footer__logo font-weight-bold">
+                            DramScapes
+                        </h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="footer__heading">
+                            Meet Us On:
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square footer-links text-light" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter-square px-4 footer-links text-light" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram-square footer-links text-light" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ***** /.Footer ***** -->
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
