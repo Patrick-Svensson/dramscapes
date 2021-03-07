@@ -60,7 +60,6 @@ body {
 
     & .small {
         font-size: .7rem;
-        color: rgb(248, 249, 250);
     }
 }
 
@@ -92,8 +91,21 @@ body {
 
 // ***** Footer *****
 
-.footer-links {
-    font-size: 1.5rem;
+.footer {
+
+    &__links:hover {
+        color: transparent;
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        color: rgb(248, 249, 250);
+        border: none;
+    }
+
+    &__icon:hover {
+        color: rgb(201, 101, 70);
+    }
 }
 
 // ***** Media Queries *****

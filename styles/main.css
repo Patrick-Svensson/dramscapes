@@ -46,7 +46,6 @@ body {
 }
 .jumbotron .small {
   font-size: 0.7rem;
-  color: #f8f9fa;
 }
 
 .features {
@@ -68,8 +67,16 @@ body {
   color: #c96546;
 }
 
-.footer-links {
+.footer__links:hover {
+  color: transparent;
+}
+.footer__icon {
   font-size: 1.5rem;
+  color: #f8f9fa;
+  border: none;
+}
+.footer__icon:hover {
+  color: #c96546;
 }
 
 @media (max-width: 440px) and (max-height: 800px) {
